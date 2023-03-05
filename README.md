@@ -5,18 +5,20 @@
 [![LinkedIn Badge](https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vili-ikaheimo)
 [![Twitter Badge](https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/VIkaheim)
 
+![TryHackMe](https://tryhackme-badges.s3.amazonaws.com/Rextension.png)
+
 A starting software developer passionate about programming in rust.
 
 ```rust
 pub struct AboutMe<'a> {
     languages: [&'a str; 4],
-    technologies: [&'a str; 4],
+    technologies: [&'a str; 6],
     studying: Option<&'a str>,
 }
 
 const Vikaheimo: AboutMe = AboutMe {
     languages: ["Rust", "Python", "JavaScript", "C++"],
-    technologies: ["Docker", "GIT", "gRPC", "MongoDB"],
+    technologies: ["Linux", "Docker", "GIT", "React", "gRPC", "MongoDB"],
     studying: Some("Computer Engineering at Tampere University"),
 };
 ```
