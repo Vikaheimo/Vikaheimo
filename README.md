@@ -11,14 +11,14 @@ A starting software developer passionate about programming in rust.
 
 ```rust
 pub struct AboutMe<'a> {
-    languages: [&'a str; 4],
-    technologies: [&'a str; 6],
+    languages: &'a [&'a str],
+    technologies: &'a [&'a str],
     studying: Option<&'a str>,
 }
 
 const Vikaheimo: AboutMe = AboutMe {
-    languages: ["Rust", "Python", "JavaScript", "C++"],
-    technologies: ["Linux", "Docker", "GIT", "React", "gRPC", "MongoDB"],
+    languages: &["Rust", "Python", "JavaScript", "Typescript", "C++"],
+    technologies: &["Linux", "Docker", "Git", "React", "Svelte" ,"gRPC", "MongoDB", "MariaDB"],
     studying: Some("Computer Engineering at Tampere University"),
 };
 ```
